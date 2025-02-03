@@ -251,10 +251,10 @@ def display_player_stats(matches, players, game_method):
 st.title("🎾 테니스 매칭 스케줄 생성기")
 
 st.header("1. 세팅")
-num_players_input = st.number_input("인원수 입력", min_value=1, value=8, step=1)
+num_players_input = st.number_input("인원수 입력", min_value=1, value=6, step=1)
 game_count_option = st.selectbox("매칭당 게임수 선택", options=["4게임 (20분)", "6게임 (30분)"])
 game_method = st.selectbox("게임 방법 선택", options=["단식", "남복", "여복", "혼복"])
-game_time_hours = st.number_input("게임 시간 입력 (시간)", min_value=0.5, value=6.0, step=0.5)
+game_time_hours = st.number_input("게임 시간 입력 (시간)", min_value=0.5, value=3.0, step=0.5)
 # 테니스 코트 갯수 입력은 제거
 
 if st.button("세팅 확인"):
